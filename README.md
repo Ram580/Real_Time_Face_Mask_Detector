@@ -33,7 +33,7 @@ MobileNetV2 is chosen for its efficiency and performance in real-time applicatio
 
 MobileNetV2 is a popular choice for real-time applications due to its emphasis on efficiency. Compared to traditional CNNs, MobileNetV2 boasts a smaller size and requires fewer computations. This translates to faster processing of video frames, making it ideal for real-world scenarios where real-time performance is crucial. Despite its efficiency, MobileNetV2 maintains good accuracy on image classification tasks, striking a perfect balance between performance and resource consumption.
 
-Further Enhancements
-Experiment with different pre-trained models for face detection and mask prediction to improve accuracy.
-Train custom deep learning models for specific requirements or datasets.
-Implement additional features such as counting the number of people with/without masks or integrating audio alerts for mask violations.
+## Further Enhancements
+- **Experiment with different pre-trained models for face detection and mask prediction to improve accuracy.
+- **Train custom deep learning models for specific requirements or datasets.
+- **Implement additional features such as counting the number of people with/without masks or integrating audio alerts for mask violations.
