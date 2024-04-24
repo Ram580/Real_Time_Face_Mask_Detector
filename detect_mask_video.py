@@ -2,6 +2,7 @@
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.models import load_model
+from tensorflow.keras.layers import TFSMLayer
 from imutils.video import VideoStream
 import numpy as np
 import imutils
@@ -76,8 +77,10 @@ prototxtPath = r"face_detector\deploy.prototxt"
 weightsPath = r"face_detector\res10_300x300_ssd_iter_140000.caffemodel"
 faceNet = cv2.dnn.readNet(prototxtPath, weightsPath)
 
-# load the face mask detector model from disk
-maskNet = load_model("mask_detector.model")
+# load the face mask detector model from disk 
+maskNet = load_model("mask_detector.h5") 
+# Load the SavedModel
+#maskNet = TFSMLayer("mask_detector.model", call_endpoint='serving_default')
 
 # initialize the video stream
 print("[INFO] starting video stream...")
